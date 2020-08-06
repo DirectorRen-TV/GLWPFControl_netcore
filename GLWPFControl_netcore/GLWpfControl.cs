@@ -114,10 +114,6 @@ namespace OpenTK.Wpf {
             Ready?.Invoke();
         }
 
-        /*public void MakeCurrent() => _context.MakeCurrent(_windowInfo); 
-        public void SwapBuffers() {
-            _context.SwapBuffers();
-        }*/
 
         private void OnUnloaded(object sender, RoutedEventArgs args) {
             if (_context == null) {
