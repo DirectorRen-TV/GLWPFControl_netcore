@@ -16,7 +16,7 @@ namespace OpenTK.Wpf {
     ///     Bind to the <see cref="Render"/> event only after <see cref="Start(GLWpfControlSettings)"/> is called.
     /// </summary>
     public sealed class GLWpfControl : FrameworkElement {
-        private const int ResizeUpdateInterval = 1;
+        private const int ResizeUpdateInterval = 100;
 
         private readonly Stopwatch _stopwatch = Stopwatch.StartNew();
         private long _resizeStartStamp;
